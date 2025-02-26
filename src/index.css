@@ -48,9 +48,10 @@ html {
 
 body {
   font-family: "Inter", serif;
-  line-height: 1.5;
   font-size: var(--font-size-16);
+  line-height: 1.5;
   min-height: 100vh;
+  background-color: var(--color-neutral-0);
 }
 
 img,

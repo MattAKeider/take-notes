@@ -1,0 +1,6 @@
+.mainContent {
+  grid-area: main;
+  border: var(--color-neutral-200) solid 1px;
+  border-bottom: 0;
+  border-right: 0;
+}

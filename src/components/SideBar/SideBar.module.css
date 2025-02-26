@@ -1,0 +1,5 @@
+.sidebar {
+  grid-area: sidebar;
+  border: var(--color-neutral-200) solid 1px;
+  border-bottom: 0;
+}

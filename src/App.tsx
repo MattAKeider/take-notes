@@ -1,13 +1,17 @@
+import NavigationBar from './components/NavigationBar/NavigationBar';
+import MainContent from './components/MainContent/MainContent';
+import Header from './components/Header/Header';
+import SideBar from './components/SideBar/SideBar';
 import classes from './App.module.css';
 
 const App = () => {
   return (
-    <main className={classes.container}>
-      <div className={`${classes.nav} ${classes.section}`}>Nav Sidebar</div>
-      <div className={`${classes.header} ${classes.section}`}>Header</div>
-      <div className={`${classes.sidebar} ${classes.section}`}>Item Sidebar</div>
-      <div className={`${classes.main} ${classes.section}`}>Main</div>
-    </main>
+    <div className={classes.container}>
+      <NavigationBar />
+      <Header />
+      <SideBar />
+      <MainContent />
+    </div>
   );
 };
 

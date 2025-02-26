@@ -1,0 +1,7 @@
+.navbar {
+  grid-area: navbar;
+  border: var(--color-neutral-200) solid 1px;
+  border-top: 0;
+  border-bottom: 0;
+  border-left: 0;
+}

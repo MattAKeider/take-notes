@@ -1,0 +1,6 @@
+.header {
+  grid-area: header;
+  border: var(--color-neutral-200) solid 1px;
+  border-top: 0;
+  border-right: 0;
+}

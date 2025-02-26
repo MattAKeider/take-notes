@@ -1,0 +1,9 @@
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 272px 290px 1fr;
+  grid-template-rows: 81px 1fr;
+  grid-template-areas: 
+    'navbar   header   header'
+    'navbar   sidebar  main';
+}

@@ -1,6 +1,28 @@
 .header {
   grid-area: header;
+  padding: 2rem 3.2rem;
   border: var(--color-neutral-200) solid 1px;
   border-top: 0;
   border-right: 0;
+  border-left: 0;
+}
+
+.headerWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerText {
+  font-size: var(--font-size-24);
+  color: var(--color-neutral-950);
+}
+
+.headerActions {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.settingsIcon {
+  cursor: pointer;
 }

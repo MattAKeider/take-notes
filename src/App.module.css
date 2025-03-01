@@ -1,8 +1,8 @@
 .container {
   height: 100vh;
   display: grid;
-  grid-template-columns: 272px 290px 1fr;
-  grid-template-rows: 81px 1fr;
+  grid-template-columns: minmax(272px, auto) minmax(290px, auto) 1fr;
+  grid-template-rows: minmax(81px, auto) 1fr;
   grid-template-areas: 
     'navbar   header   header'
     'navbar   sidebar  main';

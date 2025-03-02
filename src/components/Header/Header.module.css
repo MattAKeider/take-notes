@@ -18,11 +18,21 @@
   color: var(--color-neutral-950);
 }
 
-.headerActions {
+.actionsWrapper {
   display: flex;
-  gap: 1.6rem;
+  gap: 2rem;
+  align-items: center;
 }
 
 .settingsIcon {
   cursor: pointer;
+  width: 22px;
+  height: 22px;
+  color: var(--color-neutral-500);
+}
+
+.settingsIcon:hover,
+.settingsIcon:active {
+  color: var(--color-neutral-600);
+  transition: 0.8s;
 }

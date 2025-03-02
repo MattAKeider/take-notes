@@ -8,7 +8,7 @@ const Header = () => {
     <header className={classes.header}>
       <div className={classes.headerWrapper}>
         <h2 className={classes.headerText}>All Notes</h2>
-        <div className={classes.headerActions}>
+        <div className={classes.actionsWrapper}>
           <Search />
           <SettingsIcon className={classes.settingsIcon} />
         </div>

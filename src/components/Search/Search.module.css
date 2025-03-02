@@ -14,11 +14,18 @@
 
 .searchInput {
   font-size: var(--font-size-14);
+  letter-spacing: 0.4px;
   border: transparent;
   width: 23rem;
-  letter-spacing: 0.4px;
+  color: var(--color-neutral-950);
+  outline: transparent;
 }
 
 .searchInput::placeholder {
   color: var(--color-neutral-500);
+}
+
+.searchWrapper:hover,
+.searchWrapper:active {
+  border-color: var(--color-neutral-600);
 }

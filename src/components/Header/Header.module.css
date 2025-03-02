@@ -18,7 +18,7 @@
   color: var(--color-neutral-950);
 }
 
-.headerActions {
+.actionsWrapper {
   display: flex;
   gap: 2rem;
   align-items: center;
@@ -29,4 +29,9 @@
   width: 20px;
   height: 20px;
   color: var(--color-neutral-500);
+}
+
+.settingsIcon:hover,
+.settingsIcon:active {
+  color: var(--color-neutral-600);
 }

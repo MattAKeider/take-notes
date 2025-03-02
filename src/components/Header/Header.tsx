@@ -1,4 +1,6 @@
-import settingIcon from '../../assets/Images/icon-settings.svg';
+import { IoSettingsOutline as SettingsIcon } from 'react-icons/io5';
+
+import Search from '../Search/Search';
 import classes from './Header.module.css';
 
 const Header = () => {
@@ -7,10 +9,8 @@ const Header = () => {
       <div className={classes.headerWrapper}>
         <h2 className={classes.headerText}>All Notes</h2>
         <div className={classes.headerActions}>
-          {/* TODO: Add Search component */}
-          <p>SEARCH PLACEHOLDER</p>
-          {/* TODO: Fix settings icon color */}
-          <img className={classes.settingsIcon} src={settingIcon} alt="Settings gear icon" />
+          <Search />
+          <SettingsIcon className={classes.settingsIcon} />
         </div>
       </div>
     </header>

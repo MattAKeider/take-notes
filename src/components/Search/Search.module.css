@@ -15,9 +15,9 @@
 .searchInput {
   font-size: var(--font-size-14);
   letter-spacing: 0.4px;
-  border: transparent;
   width: 23rem;
   color: var(--color-neutral-950);
+  border: transparent;
   outline: transparent;
 }
 

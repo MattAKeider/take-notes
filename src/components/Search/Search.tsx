@@ -4,10 +4,10 @@ import classes from './Search.module.css';
 
 const Search = () => {
   return (
-    <search className={classes.searchWrapper}>
+    <div className={classes.searchWrapper}>
       <SearchIcon className={classes.searchIcon} />
       <input className={classes.searchInput} type="text" placeholder="Search by title, content, or tags..." />
-    </search>
+    </div>
   );
 };
 

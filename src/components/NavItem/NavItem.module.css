@@ -1,0 +1,56 @@
+.navItemWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem;
+  margin-bottom: 0.8rem;
+  cursor: pointer;
+  border: var(--color-neutral-0) 1px solid;
+  border-radius: 8px;
+}
+
+.linkWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.linkIcon {
+  color: var(--color-neutral-700);
+}
+
+.caretIcon {
+  color: var(--color-neutral-950);
+}
+
+.linkIcon,
+.caretIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.link {
+  font-size: var(--font-size-14);
+  color: var(--color-neutral-700);
+  text-decoration: none;
+}
+
+/* selected & hover states */
+.selected {
+  background-color: var(--color-neutral-100);
+  border-color: var(--color-neutral-100);
+}
+
+.dark {
+  color: var(--color-neutral-950);
+}
+
+.blue {
+  color: var(--color-blue-500);
+}
+
+.navItemWrapper:hover,
+.navItemWrapper:active {
+  border-color: var(--color-neutral-200);
+  transition: 0.8s;
+}

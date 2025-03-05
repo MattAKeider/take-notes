@@ -14,10 +14,10 @@ interface NavItemProps {
 const NavItem = ({ LinkIcon, linkText, selected, url = '#', onClickLink }: NavItemProps) => {
   return (
     <div className={`${classes.navItemWrapper} ${selected ? classes.selected : ''}`} onClick={() => onClickLink(linkText)}>
-      <div className={classes.linkWrapper}>
-        <LinkIcon className={`${classes.linkIcon} ${selected ? classes.blue : ''}`}/>
-        <a href={url} className={`${classes.link} ${selected ? classes.dark : ''}`}>{linkText}</a>
-      </div>
+      <a href={url} className={`${classes.link} ${selected ? classes.darkFont : ''}`}>
+        <LinkIcon className={`${classes.linkIcon} ${selected ? classes.blueIcon : ''}`}/>
+        {linkText}
+      </a>
       {selected && <Caret className={classes.caretIcon}/>}
     </div>
   );

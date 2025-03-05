@@ -9,13 +9,16 @@
   border-radius: 8px;
 }
 
-.linkWrapper {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
+.link {
+  font-size: var(--font-size-14);
+  color: var(--color-neutral-700);
+  text-decoration: none;
 }
 
 .linkIcon {
+  display: inline-block;
+  vertical-align: -4px;
+  margin-right: 0.8rem;
   color: var(--color-neutral-700);
 }
 
@@ -29,23 +32,17 @@
   height: 20px;
 }
 
-.link {
-  font-size: var(--font-size-14);
-  color: var(--color-neutral-700);
-  text-decoration: none;
-}
-
 /* selected & hover states */
 .selected {
   background-color: var(--color-neutral-100);
   border-color: var(--color-neutral-100);
 }
 
-.dark {
+.darkText {
   color: var(--color-neutral-950);
 }
 
-.blue {
+.blueIcon {
   color: var(--color-blue-500);
 }
 

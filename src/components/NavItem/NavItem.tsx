@@ -13,7 +13,7 @@ interface NavItemProps {
 
 const NavItem = ({ LinkIcon, linkText, selected, url = '#', onClickLink }: NavItemProps) => {
   return (
-    <div className={`${classes.navItemWrapper} ${selected ? classes.selected : ''}`} onClick={() => onClickLink(linkText)}>
+    <div data-testid="wrapper" className={`${classes.navItemWrapper} ${selected ? classes.selected : ''}`} onClick={() => onClickLink(linkText)}>
       <a href={url} className={`${classes.link} ${selected ? classes.darkFont : ''}`}>
         <LinkIcon className={`${classes.linkIcon} ${selected ? classes.blueIcon : ''}`}/>
         {linkText}

@@ -25,3 +25,6 @@ dist-ssr
 
 # Project Docs
 PROJECT_DOCS
+
+# Testing
+coverage

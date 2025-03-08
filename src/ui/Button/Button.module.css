@@ -13,3 +13,9 @@
   vertical-align: -2px;
   margin-right: 0.2rem;
 }
+
+.button:hover,
+.button:active {
+  background-color: var(--color-blue-700);
+  transition: 0.8s;
+}

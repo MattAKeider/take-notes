@@ -1,9 +1,18 @@
+import { GoPlus as PlusIcon } from 'react-icons/go';
+
+import Button from '../../ui/Button/Button';
+import Notes from '../Notes/Notes';
 import classes from './SideBar.module.css';
 
 const SideBar = () => {
   return (
     <aside className={classes.sidebar}>
-      <p>SideBar</p>
+      <div className={classes.sidebarWrapper}>
+        <Button Icon={PlusIcon}>
+          Create New Note
+        </Button>
+        <Notes />
+      </div>
     </aside>
   );
 };

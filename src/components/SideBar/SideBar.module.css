@@ -5,3 +5,11 @@
   border-top: 0;
   border-left: 0;
 }
+
+.sidebarWrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.6rem 2rem 3.2rem;
+  gap: 1.6rem;
+  height: 100%;
+}

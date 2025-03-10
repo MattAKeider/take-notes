@@ -34,6 +34,8 @@ RADIUS (px): 0 / 4 / 6 / 8 / 10 / 12 / 16 / 20 / 24 / 999
 
   --color-red-500: #FB3748;
   --color-red-100: #FFD5D8;
+
+  color-scheme: light dark;
 }
 
 * {
@@ -51,7 +53,7 @@ body {
   font-size: var(--font-size-16);
   line-height: 1.5;
   min-height: 100vh;
-  background-color: var(--color-neutral-0);
+  background-color: light-dark(var(--color-neutral-0), var(--color-neutral-950));
 }
 
 img,

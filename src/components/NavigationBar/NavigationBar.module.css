@@ -1,6 +1,6 @@
 .navbar {
   grid-area: navbar;
-  border: var(--color-neutral-200) solid 1px;
+  border: light-dark(var(--color-neutral-200), var(--color-neutral-800)) solid 1px;
   border-top: 0;
   border-bottom: 0;
   border-left: 0;
@@ -17,9 +17,13 @@
   padding-block: 0.8rem;
 }
 
+.logoSvg > g > path {
+  fill: light-dark(var(--color-neutral-950), var(--color-neutral-0));
+}
+
 /* .navigation {} */
 
 .noteCategories {
-  border-bottom: var(--color-neutral-200) solid 1px;
+  border-bottom: light-dark(var(--color-neutral-200), var(--color-neutral-800)) solid 1px;
   padding-bottom: 0.8rem;
 }

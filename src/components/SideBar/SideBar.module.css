@@ -1,6 +1,6 @@
 .sidebar {
   grid-area: sidebar;
-  border: var(--color-neutral-200) solid 1px;
+  border: light-dark(var(--color-neutral-200), var(--color-neutral-800)) solid 1px;
   border-bottom: 0;
   border-top: 0;
   border-left: 0;

@@ -1,7 +1,7 @@
 .searchWrapper {
   display: flex;
   gap: 0.8rem;
-  border: var(--color-neutral-300) solid 1px;
+  border: light-dark(var(--color-neutral-300), var(--color-neutral-600)) solid 1px;
   border-radius: 8px;
   padding: 0.8rem 1.2rem;
 }
@@ -9,27 +9,27 @@
 .searchIcon {
   width: 20px;
   height: 20px;
-  color: var(--color-neutral-500);
+  color: light-dark(var(--color-neutral-500), var(--color-neutral-400));
 }
 
 .searchInput {
   font-size: var(--font-size-14);
   letter-spacing: 0.4px;
   width: 23rem;
-  color: var(--color-neutral-950);
+  color: light-dark(var(--color-neutral-950), --color-neutral-0);
   border: transparent;
   outline: transparent;
 }
 
 .searchInput::placeholder {
-  color: var(--color-neutral-500);
+  color: light-dark(var(--color-neutral-500), var(--color-neutral-400));
 }
 
 .searchWrapper:hover,
 .searchWrapper:active,
 .searchInput:hover::placeholder {
-  color: var(--color-neutral-950);
-  border-color: var(--color-neutral-600);
+  color: light-dark(var(--color-neutral-950), var(--color-neutral-0));
+  border-color: light-dark(var(--color-neutral-600), var(--color-neutral-0));
   border-width: 1.5px;
   transition: 0.8s;
 }

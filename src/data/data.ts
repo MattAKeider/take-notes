@@ -1,4 +1,4 @@
-interface Note {
+export interface Note {
   title: string;
   tags: string[];
   content: string;
@@ -6,7 +6,7 @@ interface Note {
   isArchived: boolean;
 }
 
-export const notes: Note[] = [
+const notes: Note[] = [
 	{
 		title: 'React Performance Optimization',
 		tags: [
@@ -111,3 +111,5 @@ export const notes: Note[] = [
 		isArchived: false
 	}
 ];
+
+export default notes;

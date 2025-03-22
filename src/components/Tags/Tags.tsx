@@ -12,12 +12,12 @@ interface TagsProps {
 }
 
 const Tags = ({ onClickTag, selectedTag }: TagsProps) => {
-  // TODO: raise state. This is only temporary!
   const [tags, setTags] = useState<string[]>([]);
-
+  
+  // TODO: This is only temporary & remember to refactor!
   useEffect(() => {
     setTags(getAllTags(notes));
-  }, [notes]);
+  }, []);
 
   return (
     <>

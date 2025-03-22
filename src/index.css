@@ -52,7 +52,7 @@ body {
   font-family: "Inter", serif;
   font-size: var(--font-size-16);
   line-height: 1.5;
-  min-height: 100vh;
+  overflow: hidden;
   background-color: light-dark(var(--color-neutral-0), var(--color-neutral-950));
 }
 

@@ -1,0 +1,9 @@
+.title {
+  margin-block: 0.8rem;
+  padding-left: 0.8rem;
+}
+
+.tagList {
+  overflow-y: scroll;
+  scrollbar-width: none;
+}

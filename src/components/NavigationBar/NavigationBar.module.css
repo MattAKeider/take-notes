@@ -21,7 +21,11 @@
   fill: light-dark(var(--color-neutral-950), var(--color-neutral-0));
 }
 
-/* .navigation {} */
+.navWrapper {
+  display: flex;
+  flex-direction: column;
+  max-height: 88vh;
+}
 
 .noteCategories {
   border-bottom: light-dark(var(--color-neutral-200), var(--color-neutral-800)) solid 1px;

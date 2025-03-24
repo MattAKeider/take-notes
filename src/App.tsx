@@ -1,7 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-// eslint-disable no-unused-vars
-import { useState } from 'react';
-
 import NavigationBar from './components/NavigationBar/NavigationBar';
 import MainContent from './components/MainContent/MainContent';
 import Header from './components/Header/Header';
@@ -11,11 +7,12 @@ import getAllTags from './utility/helper';
 import classes from './App.module.css';
 
 const App = () => {
-  const [notes, setNotes] = useState(notesData);
+  // TODO: Temporary due to typescript unused var error
+  //const [notes, setNotes] = useState(notesData);
 
   return (
     <div className={classes.wrapper}>
-      <NavigationBar tags={getAllTags(notes)} />
+      <NavigationBar tags={getAllTags(notesData)} />
       <Header />
       <SideBar />
       <MainContent />

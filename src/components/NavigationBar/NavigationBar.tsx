@@ -9,7 +9,11 @@ import classes from './NavigationBar.module.css';
 const allNotes = 'All Notes';
 const archivedNotes = 'Archived Notes';
 
-const NavigationBar = () => {
+interface NavigationBarProps {
+  tags: string[];
+};
+
+const NavigationBar = ({ tags }: NavigationBarProps) => {
   const [selectedLink, setSelectedLink] = useState<string>(allNotes);
 
   function handleSelectedLink(linkText: string) {
@@ -27,7 +31,7 @@ const NavigationBar = () => {
             <NavItem LinkIcon={Home} linkText={allNotes} selected={selectedLink === allNotes} onClickLink={handleSelectedLink} />
             <NavItem LinkIcon={Archive} linkText={archivedNotes} selected={selectedLink === archivedNotes} onClickLink={handleSelectedLink} />
           </div>
-          <Tags onClickTag={handleSelectedLink} selectedTag={selectedLink} />
+          <Tags onClickTag={handleSelectedLink} selectedTag={selectedLink} tags={tags} />
         </nav>
       </div>
     </div>

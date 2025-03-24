@@ -4,14 +4,16 @@ import NavigationBar from './components/NavigationBar/NavigationBar';
 import MainContent from './components/MainContent/MainContent';
 import Header from './components/Header/Header';
 import SideBar from './components/SideBar/SideBar';
-import notesData from './data/data';
+import notesData, { Note } from './data/data';
 import getAllTags from './utility/helper';
 import classes from './App.module.css';
 
 const App = () => {
-  // TODO: remove when using set function
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [notes, setNotes] = useState(notesData);
+
+  function handleAddNotes(note: Note) {
+    setNotes(prevNotes => [note, ...prevNotes]);
+  }
 
   return (
     <div className={classes.wrapper}>

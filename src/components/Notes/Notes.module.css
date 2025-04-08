@@ -10,3 +10,9 @@
   font-weight: 300;
   color: light-dark(var(--color-neutral-950), var(--color-neutral-0));
 }
+
+.notesList {
+  list-style: none;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}

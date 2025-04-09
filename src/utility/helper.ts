@@ -1,4 +1,4 @@
-import { Note } from '../data/data';
+import { type Note } from '../data/data';
 
 export default function getAllTags(notes: Note[]) {
   const allTags = notes.map(note => note.tags).flat();

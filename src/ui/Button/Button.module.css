@@ -6,6 +6,7 @@
   color: var(--color-neutral-0);
   border-radius: 8px;
   border: transparent;
+  cursor: pointer;
 }
 
 .icon {

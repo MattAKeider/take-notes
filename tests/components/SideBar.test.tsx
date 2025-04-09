@@ -4,7 +4,7 @@ import SideBar from '../../src/components/SideBar/SideBar';
 
 describe('SideBar', () => {
   test('should render the SideBar component', () => {
-    render(<SideBar />);
+    render(<SideBar notes={[]} />);
     expect(screen.getByRole('button')).toBeInTheDocument();
   });
 });

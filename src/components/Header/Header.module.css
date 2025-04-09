@@ -1,10 +1,7 @@
 .header {
   grid-area: header;
   padding: 2rem 3.2rem;
-  border: light-dark(var(--color-neutral-200), var(--color-neutral-800)) solid 1px;
-  border-top: 0;
-  border-right: 0;
-  border-left: 0;
+  border-bottom: light-dark(var(--color-neutral-200), var(--color-neutral-800)) solid 1px;
 }
 
 .headerWrapper {

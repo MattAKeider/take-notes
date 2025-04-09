@@ -1,5 +1,5 @@
 import NoteCard from '../NoteCard/NoteCard';
-import { Note } from '../../data/data';
+import { type Note } from '../../data/data';
 import classes from './Notes.module.css';
 
 interface NotesProps {

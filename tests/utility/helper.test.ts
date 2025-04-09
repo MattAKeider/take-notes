@@ -1,5 +1,5 @@
 import getAllTags from '../../src/utility/helper';
-import { Note } from '../../src/data/data';
+import { type Note } from '../../src/data/data';
 
 describe('helper', () => {
   test('should only return all unique tags from notes objects array', () => {

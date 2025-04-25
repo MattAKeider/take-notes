@@ -10,17 +10,23 @@ import classes from './App.module.css';
 
 const App = () => {
   const [notes, setNotes] = useState(notesData);
+  const [note, setNote] = useState(notes[0]);
 
   function handleAddNote(note: Note) {
     setNotes(prevNotes => [note, ...prevNotes]);
+  }
+
+  function handleClickedNote(title: string) {
+    const note = notes.find((note: Note) => note.title === title);
+    setNote(note as Note);
   }
 
   return (
     <div className={classes.wrapper}>
       <NavigationBar tags={getAllTags(notes)} />
       <Header />
-      <SideBar notes={notes} />
-      <MainContent />
+      <SideBar notes={notes} onClick={handleClickedNote} />
+      <MainContent note={note} />
     </div>
   );
 };

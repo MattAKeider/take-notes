@@ -1,3 +1,4 @@
 .mainContent {
   grid-area: main;
+  display: flex;
 }

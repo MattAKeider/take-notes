@@ -1,0 +1,71 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 60rem;
+  padding: 2rem 2.4rem;
+  border-right: light-dark(var(--color-neutral-200), var(--color-neutral-800)) solid 1px;
+  color: light-dark(var(--color-neutral-700), var(--color-neutral-200));
+}
+
+.title {
+  font-size: var(--font-size-24);
+  color: light-dark(var(--color-neutral-950), var(--color-neutral-0));
+}
+
+.noteInfo {
+  font-size: var(--font-size-16);
+  padding-block: 1rem;
+  border-bottom: light-dark(var(--color-neutral-200), var(--color-neutral-800)) solid 1px;
+}
+
+.info {
+  padding-block: 0.6rem;
+}
+
+.label {
+  display: inline-block;
+  min-width: 25%;
+}
+
+.icon {
+  display: inline-block;
+  vertical-align: -2px;
+  margin-right: 6px;
+}
+
+.tagValue {
+  margin-right: 0.8rem;
+}
+
+.noteContent {
+  padding-block: 1rem;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  height: 57vh;
+  border-bottom: light-dark(var(--color-neutral-200), var(--color-neutral-800)) solid 1px;
+}
+
+.content {
+  font-size: var(--font-size-16);
+  white-space: pre-line;
+}
+
+.actions {
+  padding: 1rem 0;
+}
+
+.saveButton,
+.cancelButton {
+  padding: 1rem 1.4rem;
+  margin-right: 2rem;
+}
+
+.actions .cancelButton {
+  background-color: light-dark(var(--color-neutral-300), var(--color-neutral-700));
+  color: light-dark(var(--color-neutral-950), var(--color-neutral-0));
+}
+
+.actions .cancelButton:active,
+.actions .cancelButton:hover {
+  background-color: var(--color-neutral-500);
+}

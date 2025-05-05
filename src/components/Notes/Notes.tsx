@@ -4,9 +4,10 @@ import classes from './Notes.module.css';
 
 interface NotesProps {
   notes: Note[];
+  onClickNote: (title: string) => void;
 }
 
-const Notes = ({ notes }: NotesProps) => {
+const Notes = ({ notes, onClickNote }: NotesProps) => {
   if(notes.length <= 0) {
     return (
       <div className={classes.emptyNotesCard}>
@@ -20,7 +21,7 @@ const Notes = ({ notes }: NotesProps) => {
   return (
     <ul className={classes.notesList}>
       {notes.map((note: Note) => (
-        <NoteCard key={note.title} title={note.title} tags={note.tags} lastEdit={note.lastEdited} />
+        <NoteCard key={note.title} title={note.title} tags={note.tags} lastEdit={note.lastEdited} onClickNoteCard={onClickNote} />
       ))}
     </ul>
   );

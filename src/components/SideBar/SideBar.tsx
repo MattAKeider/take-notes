@@ -7,16 +7,17 @@ import classes from './SideBar.module.css';
 
 interface SideBarProps {
   notes: Note[];
+  onClick: (title: string) => void;
 }
 
-const SideBar = ({ notes }: SideBarProps) => {
+const SideBar = ({ notes, onClick }: SideBarProps) => {
   return (
     <aside className={classes.sidebar}>
       <div className={classes.sidebarWrapper}>
         <Button Icon={PlusIcon}>
           Create New Note
         </Button>
-        <Notes notes={notes} />
+        <Notes notes={notes} onClickNote={onClick}/>
       </div>
     </aside>
   );

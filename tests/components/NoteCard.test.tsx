@@ -5,7 +5,8 @@ import NoteCard from '../../src/components/NoteCard/NoteCard';
 const props = {
   title: 'React Testing',
   tags: ['React', 'Testing'],
-  lastEdit: '2024-10-29T10:15:00Z'
+  lastEdit: '2024-10-29T10:15:00Z',
+  onClickNoteCard: vitest.fn()
 };
 
 describe('NoteCard', () => {
